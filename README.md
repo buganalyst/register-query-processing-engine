@@ -58,7 +58,7 @@ register_query_engine/
 │   ├── buffer_pool.cpp
 │   ├── virtual_memory.cpp
 │   └── database.cpp
-├── data/                  # Runtime data, created as needed
+├── data/                
 ├── CMakeLists.txt
 └── README.md
 ```
