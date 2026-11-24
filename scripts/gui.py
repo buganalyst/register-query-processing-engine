@@ -18,21 +18,22 @@ PAGE = r"""<!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Register Query Engine</title>
   <style>
-    :root { --ink:#172033; --muted:#697386; --line:#dfe3eb; --blue:#3157d5; --paper:#fff; --wash:#f4f6fa; }
+    :root { --ink:#e7ebf3; --muted:#9aa4b5; --line:#303746; --blue:#6d8cff; --paper:#181d27; --wash:#10141c; }
     * { box-sizing:border-box; }
     body { margin:0; min-height:100vh; background:var(--wash); color:var(--ink); font:14px/1.45 Inter,Segoe UI,sans-serif; }
-    header { height:64px; display:flex; align-items:center; justify-content:space-between; padding:0 28px; background:#fff; border-bottom:1px solid var(--line); }
-    header strong { font-size:16px; } header span { color:#5e6879; font-size:12px; }
+    header { height:64px; display:flex; align-items:center; justify-content:space-between; padding:0 28px; background:#181d27; border-bottom:1px solid var(--line); }
+    header strong { font-size:16px; } header span { color:#aab3c2; font-size:12px; }
     main { max-width:1180px; margin:22px auto; display:grid; grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr); gap:16px; padding:0 16px; }
-    .card { background:var(--paper); border:1px solid var(--line); border-radius:10px; overflow:hidden; box-shadow:0 2px 10px rgba(22,32,51,.04); }
+    .card { background:var(--paper); border:1px solid var(--line); border-radius:10px; overflow:hidden; box-shadow:0 2px 14px rgba(0,0,0,.18); }
     .card-head { height:48px; display:flex; align-items:center; justify-content:space-between; padding:0 16px; border-bottom:1px solid var(--line); font-weight:700; }
-    textarea { width:100%; height:310px; resize:vertical; border:0; outline:none; padding:18px; font:14px/1.6 Consolas,monospace; color:#25304a; }
-    .actions { display:flex; gap:8px; padding:12px 16px; border-top:1px solid var(--line); background:#fbfcfe; }
+    textarea { width:100%; height:310px; resize:vertical; border:0; outline:none; padding:18px; background:#181d27; color:#dfe6f2; font:14px/1.6 Consolas,monospace; }
+    textarea::placeholder { color:#748095; }
+    .actions { display:flex; gap:8px; padding:12px 16px; border-top:1px solid var(--line); background:#141923; }
     button { border:0; border-radius:7px; padding:9px 14px; background:var(--blue); color:white; font-weight:700; cursor:pointer; }
-    button.secondary { background:#edf0f5; color:#40506a; }
+    button.secondary { background:#252c39; color:#c5cddd; }
     pre { margin:0; min-height:310px; max-height:520px; overflow:auto; white-space:pre-wrap; padding:18px; font:13px/1.55 Consolas,monospace; }
     .examples { display:flex; flex-wrap:wrap; gap:7px; margin-top:10px; }
-    .examples button { background:white; border:1px solid var(--line); color:#4a5770; font-size:12px; padding:6px 8px; }
+    .examples button { background:#181d27; border:1px solid var(--line); color:#c5cddd; font-size:12px; padding:6px 8px; }
     .status { display:inline-flex; align-items:center; gap:7px; color:#3c7a57; } .status i { width:8px; height:8px; border-radius:50%; background:#38a169; }
     @media(max-width:850px){ main{grid-template-columns:1fr} textarea,pre{height:260px;min-height:260px} }
   </style>
