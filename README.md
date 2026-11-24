@@ -59,6 +59,7 @@ register_query_engine/
 │   ├── virtual_memory.cpp
 │   └── database.cpp
 ├── data/                
+
 ├── CMakeLists.txt
 └── README.md
 ```
@@ -113,6 +114,22 @@ cmake --build build
 ```
 
 Run the executable from the build output directory appropriate to your generator and configuration.
+
+### Browser GUI
+
+After building, launch the browser interface:
+
+```powershell
+.\register_query_engine.exe --gui
+```
+
+On Linux/macOS:
+
+```bash
+./register_query_engine --gui
+```
+
+This starts a local server at `http://127.0.0.1:8080` and opens it in the default browser. The GUI uses the C++ engine in the background and is accessible only from the local machine.
 
 ## Example Usage
 

@@ -12,3 +12,5 @@ add_executable(register_query_engine
     src/database.cpp
 )
 target_include_directories(register_query_engine PRIVATE include)
+
+configure_file(scripts/gui.py "${CMAKE_BINARY_DIR}/gui.py" COPYONLY)

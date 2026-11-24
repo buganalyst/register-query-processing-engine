@@ -1,0 +1,3 @@
+/home/aringhanshala/Documents/Projects/register-query-processing-engine/build/CMakeFiles/register_query_engine.dir
+/home/aringhanshala/Documents/Projects/register-query-processing-engine/build/CMakeFiles/edit_cache.dir
+/home/aringhanshala/Documents/Projects/register-query-processing-engine/build/CMakeFiles/rebuild_cache.dir
